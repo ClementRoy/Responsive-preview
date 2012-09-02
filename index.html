@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Design Testing</title>
+	<!-- https://gist.github.com/1685127 -->
+
+	<style>
+	body { margin: 20px; font-family: sans-serif; overflow-x: scroll; }
+	body {background: url(ios-linen.jpg) fixed; color: #fff;}
+	.wrapper { width: 20000px; }
+	.frame { float: left; }
+	h2 { margin: 0 0 5px 0; }
+	iframe { margin: 0 20px 20px 0; border: 1px solid #666; }
+	</style>	
+</head>
+
+<body>
+
+<script language="JavaScript" type="text/javascript">
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// © Copperfield Publishing  (www.copperfieldpub.com)
+// This copyright notice must stay intact if using this script
+// Zoom in & Zoom out
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function zoomin(){
+if(parent.parent.document.body.style.zoom!=0) 
+parent.parent.document.body.style.zoom*=1.2; 
+else 
+parent.parent.document.body.style.zoom=1.2;
+}
+function zoomout(){
+if(parent.parent.document.body.style.zoom!=0) 
+parent.parent.document.body.style.zoom*=0.833; 
+else 
+parent.parent.document.body.style.zoom=0.833;
+}
+function zoomrest(){
+if(parent.parent.document.body.style.zoom!=0) 
+parent.parent.document.body.style.zoom*=0; 
+else 
+parent.parent.document.body.style.zoom=0;
+}
+
+</script>
+
+Here is the code to create buttons that evoke the three zoom functions:
+<input type="button" value="Zoom +" ONCLICK="zoomin();">
+<input type="button"  value="Zoom -" ONCLICK="zoomout();">
+<input type="button" class="butzoom" value="Restore" ONCLICK="zoomrest();">
+
+	<div class="tool">
+		<ul>
+			<li>Mobile</li>
+			<li>Tablet</li>
+			<li>Laptop</li>
+			<li>Desktop</li>
+			<li>TV</li>
+		</ul>
+	</div>
+<!-- 	<h1>Resolutions</h1>
+	<h2>Mobile</h2>
+	<ul>
+		<li>320x480 iPhone portrait</li>
+		<li>480x320 iPhone landspace</li>
+	</ul>
+	<h2>Tablets</h2>
+	<ul>
+		<li>768x1024 iPad portrait</li>
+		<li>1024x768 iPad landspace</li>
+	</ul>
+	<h2>Laptop</h2>
+	<ul>
+		<li>1024x600 Notebook</li>
+		<li>1280x800 MBP 13"</li>
+		<li>1366x768 MBA 11"</li>
+		<li>1440x900 MBA 13"</li>
+	</ul>
+	<h2>Desktop</h2>
+	<ul>
+		<li>iMac 21,5" 1920x1080</li>
+		<li>iMac 27" 2560x1440</li>
+	</ul>
+	<h2>TV</h2>
+	<ul>
+		<li>1280x720 HD 720p</li>
+		<li>1920x1080 HD 1080p</li>
+	</ul> -->
+
+
+	<!-- http://www.smashingmagazine.com/ -->
+
+
+	<div class="wrapper">
+
+		<h2>Mobile</h2>
+
+		<div class="frame">
+			<h2>320 &times; 480 <small>(iPhone Portrait)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="320" height="480"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>480 &times; 320 <small>(iPhone Landscape)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="480" height="320"></iframe>
+		</div>
+
+		<h2>Tablets</h2>
+
+		<div class="frame">
+			<h2>768 &times; 1024 <small>(iPad Portrait)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="768" height="1024"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>1024 &times; 768 <small>(iPad Landscape)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1024" height="768"></iframe>
+		</div>
+
+		<h2>Laptop</h2>
+
+		<div class="frame">
+			<h2>1024 &times; 600 <small>(Notebook)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1024" height="600"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>1280 &times; 800 <small>(Macbook Pro 13")</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1280" height="800"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>1366 &times; 768 <small>(Macbook Air 11")</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1366" height="768"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>1440 &times; 900 <small>(Macbook air 13")</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1440" height="900"></iframe>
+		</div>
+
+		<h2>Desktop</h2>
+
+		<div class="frame">
+			<h2>1920 &times; 1080 <small>(iMac 21.5")</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1920" height="1080"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>2560 &times; 1440 <small>(iMac 27")</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="2560" height="1440"></iframe>
+		</div>
+
+		<h2>TV</h2>
+
+		<div class="frame">
+			<h2>1280 &times; 720 <small>(HD TV 720p)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1280" height="720"></iframe>
+		</div>
+
+		<div class="frame">
+			<h2>1920 &times; 1080 <small>(HD TV 1080p)</small></h2>
+			<iframe src="http://www.smashingmagazine.com" sandbox="allow-same-origin allow-forms" seamless width="1920" height="1080"></iframe>
+		</div>
+	</div>
+</body>
+</html>
